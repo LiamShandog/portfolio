@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Liam Shannon
 
-## Getting Started
+A warm, professional personal portfolio built to be skimmable in ~30 seconds:
+a single-page scroll (Hero → About → Projects → Contact) plus a dedicated
+`/resume` page with a PDF download. Project cards pull live GitHub stats at
+build time.
 
-First, run the development server:
+**Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Vitest +
+React Testing Library. Deploys to Vercel.
+
+## Getting started
+
+> Requires Node.js 20+ and npm.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Other scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build    # production build (also fetches GitHub stats)
+npm start        # serve the production build
+npm test         # run the test suite
+npm run lint     # lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customizing the content
 
-## Learn More
+All content lives in typed data files — edit these, not the components:
 
-To learn more about Next.js, take a look at the following resources:
+- **`data/profile.ts`** — name, role, tagline, bio, skills, socials, email.
+- **`data/projects.ts`** — your 2–3 featured projects. Set `githubRepo`
+  (`"owner/name"`) to show live stars; add `liveUrl` for a demo link.
+- **`data/resume.ts`** — summary, experience, education, grouped skills.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Résumé PDF:** replace `public/resume.pdf` with your real file (the
+  "Download PDF" button links to it).
+- **Headshot:** the hero shows an initials avatar. To use a photo, drop it in
+  `public/` and swap the placeholder block in `components/Hero.tsx`.
+- **Metadata / domain:** update `metadataBase` and titles in `app/layout.tsx`.
 
-## Deploy on Vercel
+## How GitHub stats work
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`lib/github.ts` fetches each project's public repo data from the GitHub API at
+build time (with periodic revalidation). If a request fails — offline, rate
+limited, or the repo doesn't exist — it falls back to the project's own data,
+so the build never breaks and no empty state ships.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design system
+
+Warm design tokens (terracotta accent, warm neutrals) are defined as Tailwind
+`@theme` colors in `app/globals.css`, surfaced as utilities like `bg-accent`
+and `text-muted`. Reusable primitives live in `components/ui/`
+(`Container`, `Section`, `Button`, `Badge`, `Card`).
+
+## Deploying to Vercel
+
+Push to GitHub, import the repo at [vercel.com/new](https://vercel.com/new),
+and deploy — no configuration needed. Every push redeploys and refreshes the
+GitHub stats.
+
+## Tests
+
+```bash
+npm test
+```
+
+Covers the UI primitives, section components, the GitHub fetch fallback, the
+project cards, and the resume view/download.

@@ -20,6 +20,18 @@
   --font-display: var(--font-fraunces);
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Keep anchor targets clear of the sticky navbar. */
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);

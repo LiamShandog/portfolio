@@ -45,6 +45,13 @@ describe("Navbar", () => {
       "/resume",
     );
   });
+
+  it("provides a skip-to-content link for keyboard users", () => {
+    render(<Navbar />);
+    expect(
+      screen.getByRole("link", { name: /skip to content/i }),
+    ).toHaveAttribute("href", "#main-content");
+  });
 });
 
 describe("Footer", () => {

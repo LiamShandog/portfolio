@@ -19,9 +19,19 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Liam Shannon — Portfolio",
+  metadataBase: new URL("https://example.com"),
+  title: {
+    default: "Liam Shannon — Portfolio",
+    template: "%s — Liam Shannon",
+  },
   description:
     "Personal portfolio of Liam Shannon: projects, experience, and how to get in touch.",
+  openGraph: {
+    title: "Liam Shannon — Portfolio",
+    description:
+      "Projects, experience, and how to get in touch with Liam Shannon.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -36,7 +46,9 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
