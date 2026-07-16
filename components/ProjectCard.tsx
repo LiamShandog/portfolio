@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
+import { ProjectMedia } from "@/components/ProjectMedia";
 import type { Project } from "@/data/projects";
 import type { RepoStats } from "@/lib/github";
 
@@ -28,13 +29,21 @@ export function ProjectCard({ project, stats }: ProjectCardProps) {
     ? (stats?.url ?? `https://github.com/${project.githubRepo}`)
     : null;
 
+  const showStars = stats && !project.hideStars;
+
   return (
     <Card className="flex flex-col">
+      {project.media && project.media.length > 0 && (
+        <div className="mb-5">
+          <ProjectMedia media={project.media} title={project.title} />
+        </div>
+      )}
+
       <div className="flex items-start justify-between gap-3">
         <h3 className="text-lg font-semibold text-foreground">
           {project.title}
         </h3>
-        {stats && (
+        {showStars && (
           <span className="inline-flex shrink-0 items-center gap-1 text-sm text-muted">
             <StarIcon />
             {stats.stars}

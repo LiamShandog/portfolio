@@ -29,7 +29,7 @@ export async function Projects() {
           A few projects I&apos;m proud of — each one taught me something and
           shipped something real.
         </p>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 md:grid-cols-2">
           {cards.map(({ project, stats }) => (
             <ProjectCard key={project.slug} project={project} stats={stats} />
           ))}

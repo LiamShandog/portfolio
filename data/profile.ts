@@ -22,33 +22,36 @@ export type Profile = {
   resumePdf: string;
 };
 
-// NOTE: Placeholder content — swap in Liam's real details. Structure is stable;
+// Real content sourced from Liam's résumé and LinkedIn. The structure is stable;
 // editing values here updates every section automatically.
 export const profile: Profile = {
   name: "Liam Shannon",
-  role: "Full-Stack Developer",
+  role: "Full-Stack & Robotics Developer",
   tagline:
-    "I build clean, reliable web apps — and care as much about the details you don't see as the ones you do.",
-  location: "Canada",
-  email: "liam@example.com",
+    "I build at the intersection of software and hardware — from enterprise data platforms on Palantir Foundry to autonomous robots running ROS.",
+  location: "Ontario, Canada",
+  email: "liamshan13@gmail.com",
   bio: [
-    "I'm a full-stack developer who enjoys turning fuzzy problems into simple, well-crafted products. I like owning a feature end to end — from the data model to the last pixel.",
-    "Lately I've been focused on TypeScript, React, and building interfaces that feel fast and effortless. When I'm not shipping, I'm usually refactoring something to make it a little cleaner.",
+    "I'm a Mechatronics and Robotics Engineering student at Queen's University with a deep interest in robotics, aeronautics, astronautics, automation, and data engineering.",
+    "By day I'm a Software Developer at Cavtera, where I take on complex integration challenges as we migrate and unify enterprise systems onto Palantir Foundry — finding bottlenecks, designing scalable solutions, and building full-stack tools that improve data flow and decision-making across the company. Problem-solving is at the core of what I do, whether I'm debugging a system, optimizing a workflow, or designing something new from the ground up.",
+    "I'm also on the Queen's Aerospace Design Team, contributing to engineering solutions in the aerospace domain. I'm happiest working where software meets hardware, on projects that call for both technical depth and creative thinking.",
   ],
   skills: [
+    "Palantir Foundry",
     "TypeScript",
     "React",
-    "Next.js",
-    "Node.js",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "Git",
-    "REST APIs",
+    "Python",
+    "C/C++",
+    "ROS 2",
+    "Arduino",
+    "Full-Stack Development",
+    "Data Pipelines",
+    "Hardware Integration",
   ],
   socials: [
     { label: "GitHub", href: "https://github.com/LiamShandog" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-handle" },
-    { label: "Email", href: "mailto:liam@example.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/liamshannon0/" },
+    { label: "Email", href: "mailto:liamshan13@gmail.com" },
   ],
   githubUsername: "LiamShandog",
   resumePdf: "/resume.pdf",

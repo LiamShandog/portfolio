@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# local clone of external project repo — read for reference, not part of the site
+/githubProjects
+
+# raw, unoptimized source media — web-ready versions live in /public/media
+/media
+
 # debug
 npm-debug.log*
 yarn-debug.log*

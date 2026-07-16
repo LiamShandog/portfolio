@@ -1,15 +1,7 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { profile } from "@/data/profile";
-
-function initials(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .slice(0, 2)
-    .join("")
-    .toUpperCase();
-}
 
 export function Hero() {
   return (
@@ -34,15 +26,18 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Photo placeholder — swap in a real headshot later without layout change. */}
+          {/* Environmental portrait. object-position keeps the face centred in
+              the circular crop; tune the percentage if a different photo is used. */}
           <div className="shrink-0">
-            <div
-              className="flex h-40 w-40 items-center justify-center rounded-full bg-accent-soft ring-1 ring-border sm:h-48 sm:w-48"
-              aria-hidden="true"
-            >
-              <span className="font-display text-5xl font-semibold text-accent">
-                {initials(profile.name)}
-              </span>
+            <div className="relative h-40 w-40 overflow-hidden rounded-full ring-1 ring-border sm:h-48 sm:w-48">
+              <Image
+                src="/liam_photo.jpg"
+                alt={`Portrait of ${profile.name}`}
+                fill
+                sizes="(min-width: 640px) 12rem, 10rem"
+                className="object-cover object-[center_28%]"
+                priority
+              />
             </div>
           </div>
         </div>

@@ -28,57 +28,74 @@ export type Resume = {
   skills: SkillGroup[];
 };
 
-// NOTE: Placeholder resume — replace with Liam's real experience. The styled
-// /resume page and the PDF should stay in sync with this data.
+// Real résumé content for Liam Shannon. The styled /resume page renders this
+// data, and the downloadable PDF in /public should stay in sync with it.
 export const resume: Resume = {
   summary:
-    "Full-stack developer with a track record of shipping clean, well-tested web applications. Comfortable across the stack, with a bias for simple solutions and maintainable code.",
+    "Mechatronics and Robotics Engineering student at Queen's University and a working software developer — building full-stack tools and Python data pipelines on Palantir Foundry, and autonomous robots on ROS. I gravitate toward hard integration problems that span software and hardware, and I care about shipping solutions people actually rely on.",
   experience: [
     {
-      company: "Example Company",
-      role: "Full-Stack Developer",
-      start: "Jan 2023",
+      company: "Cavtera",
+      role: "Software Developer",
+      start: "Jun 2026",
       end: "Present",
-      location: "Remote",
+      location: "Ottawa, Ontario · Remote",
       bullets: [
-        "Led development of a customer-facing feature used by thousands of users, from data model to UI.",
-        "Improved page load times by ~40% by profiling and removing render bottlenecks.",
-        "Mentored a junior developer and established the team's code-review conventions.",
+        "Built React/OSDK apps for trucking operations, delivering custom software to clients across North America.",
+        "Developed TypeScript functions within the Ontology SDK to power business logic across fleet workflows.",
+        "Engineered Python data pipelines to cleanse and normalize thousands of rows of truck data, boosting productivity in trucking workflows by 50%.",
       ],
     },
     {
-      company: "Another Studio",
-      role: "Junior Developer",
-      start: "Jun 2021",
-      end: "Dec 2022",
-      location: "Hybrid",
+      company: "Thomas Cavanagh Construction Limited",
+      role: "Software Developer",
+      start: "May 2025",
+      end: "May 2026",
+      location: "Ottawa, Ontario · Remote",
       bullets: [
-        "Built and maintained React components across several client projects.",
-        "Wrote integration tests that caught regressions before release.",
-        "Collaborated with designers to translate mockups into accessible interfaces.",
+        "Developed truck-dispatch software in Palantir Foundry to manage the largest fleet in Eastern Ontario.",
+        "Cut compute costs on dispatch workflows by over 200% through data-pipeline optimization and smarter querying logic.",
+        "Worked hand-in-hand with employees across every division to create, iterate on, and improve Foundry workflows.",
+      ],
+    },
+    {
+      company: "Queen's Aerospace Design Team",
+      role: "Automation Manager · ROS Simulation",
+      start: "Sep 2024",
+      end: "Present",
+      location: "Kingston, Ontario",
+      bullets: [
+        "As Automation Manager (2026–present): own the software stack, delegate tasks across the team, and teach ROS 2 concepts to new contributors.",
+        "Designed 3D CAD models in Onshape for the team's test drone, improving structural fit.",
+        "Developed and ran drone simulations in ROS to validate flight, control, and system integration in a virtual environment.",
       ],
     },
   ],
   education: [
     {
-      school: "Your University",
-      credential: "B.Sc. in Computer Science",
-      start: "2017",
-      end: "2021",
+      school: "Queen's University",
+      credential:
+        "BASc in Mechatronics and Robotics Engineering — GPA 4.19/4.3",
+      start: "Sep 2024",
+      end: "Present",
     },
   ],
   skills: [
     {
-      category: "Languages",
-      items: ["TypeScript", "JavaScript", "SQL", "HTML", "CSS"],
+      category: "Programming",
+      items: ["TypeScript / JavaScript", "Python", "C / C++", "React", "NIOS II Assembly", "VHDL"],
     },
     {
-      category: "Frameworks & Tools",
-      items: ["React", "Next.js", "Node.js", "Tailwind CSS", "Git", "Vitest"],
+      category: "Robotics & Hardware",
+      items: ["ROS 2", "Arduino", "Raspberry Pi", "SLAM", "PID Control", "Sensor Integration"],
     },
     {
-      category: "Data & Infra",
-      items: ["PostgreSQL", "REST APIs", "Vercel"],
+      category: "Platforms & Data",
+      items: ["Palantir Foundry", "Ontology SDK", "Python Data Pipelines", "Git", "Vercel"],
+    },
+    {
+      category: "Design & CAD",
+      items: ["SolidWorks", "Onshape", "Altium", "LTspice"],
     },
   ],
 };

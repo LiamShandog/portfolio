@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     template: "%s — Liam Shannon",
   },
   description:
-    "Personal portfolio of Liam Shannon: projects, experience, and how to get in touch.",
+    "Portfolio of Liam Shannon — full-stack & robotics developer. Palantir Foundry, ROS, and full-stack projects, plus experience and contact info.",
   openGraph: {
-    title: "Liam Shannon — Portfolio",
+    title: "Liam Shannon — Full-Stack & Robotics Developer",
     description:
-      "Projects, experience, and how to get in touch with Liam Shannon.",
+      "Full-stack & robotics developer. Projects across Palantir Foundry, ROS, and the web — plus experience and how to get in touch.",
     type: "website",
   },
 };
