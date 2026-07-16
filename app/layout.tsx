@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-alpha-ochre-65.vercel.app"),
+  metadataBase: new URL("https://liamshannon.vercel.app"),
   title: {
     default: "Liam Shannon — Portfolio",
     template: "%s — Liam Shannon",
