@@ -1,0 +1,15 @@
+# Vercel installs deps and builds remotely — never upload these.
+node_modules
+.next
+.git
+
+# Raw, unoptimized source media (web-ready versions live in /public/media).
+# Leading slash anchors to repo root so /public/media is NOT excluded.
+/media
+
+# Local clone of an external project repo, kept only for reference.
+/githubProjects
+
+# Local env / editor cruft
+.env*
+*.tsbuildinfo
