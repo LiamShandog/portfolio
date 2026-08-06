@@ -6,8 +6,8 @@ import { ResumeView } from "@/components/ResumeView";
 import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: `Résumé — ${profile.name}`,
-  description: `Résumé and experience of ${profile.name}.`,
+  title: `Resume — ${profile.name}`,
+  description: `Resume and experience of ${profile.name}.`,
 };
 
 export default function ResumePage() {

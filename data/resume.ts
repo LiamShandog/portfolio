@@ -87,7 +87,7 @@ export const resume: Resume = {
     },
     {
       category: "Robotics & Hardware",
-      items: ["ROS 2", "Arduino", "Raspberry Pi", "SLAM", "PID Control", "Sensor Integration"],
+      items: ["ROS 2", "Arduino", "Raspberry Pi", "SLAM", "PID Control", "Sensor Integration", "Docker"],
     },
     {
       category: "Platforms & Data",

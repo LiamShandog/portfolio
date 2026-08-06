@@ -47,7 +47,7 @@ export function Navbar() {
               </a>
             ))}
             <Link href="/resume" className={buttonClasses("secondary")}>
-              Résumé
+              Resume
             </Link>
           </div>
 
@@ -104,7 +104,7 @@ export function Navbar() {
                 className="rounded-md px-2 py-2 text-sm font-medium text-accent"
                 onClick={() => setOpen(false)}
               >
-                Résumé
+                Resume
               </Link>
             </div>
           </div>

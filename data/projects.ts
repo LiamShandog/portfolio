@@ -64,6 +64,7 @@ export const projects: Project[] = [
     description:
       "Designed a line-following robot driven by closed-loop control: reflectance sensors feed an Arduino that continuously adjusts motor actions, with algorithms tuned against live sensor data to keep it on track at speed.",
     tags: ["Arduino", "C/C++", "Control Systems"],
+    githubRepo: "LiamShandog/Line-Following-Bot",
     media: [
       { type: "image", src: "/media/minibot.jpg", alt: "The line-following robot" },
       { type: "video", src: "/media/minibot_driving.mp4", alt: "The robot following a line" },
