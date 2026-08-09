@@ -18,6 +18,13 @@ export function Hero() {
             <p className="mt-6 text-lg leading-relaxed text-muted">
               {profile.tagline}
             </p>
+            <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-border bg-accent-soft px-4 py-1.5 text-sm font-medium text-accent">
+              <span
+                aria-hidden="true"
+                className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
+              />
+              {profile.availability}
+            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href={`mailto:${profile.email}`}>Get in touch</Button>
               <Button href="/resume" variant="secondary">
