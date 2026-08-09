@@ -17,13 +17,15 @@ export function ResumeView() {
         <div className="mt-6 space-y-8">
           {resume.experience.map((job) => (
             <div key={`${job.company}-${job.start}`}>
-              <div className="flex flex-wrap items-baseline justify-between gap-x-4">
-                <h3 className="text-lg font-semibold text-foreground">
+              {/* No flex-wrap: a long role/company pair wraps within its own
+                  column instead of pushing the date onto its own line. */}
+              <div className="flex items-baseline justify-between gap-x-4">
+                <h3 className="min-w-0 text-lg font-semibold text-foreground">
                   {job.role}
                   <span className="font-normal text-muted"> · </span>
                   <span className="font-normal text-muted">{job.company}</span>
                 </h3>
-                <span className="text-sm text-muted">
+                <span className="shrink-0 whitespace-nowrap text-sm text-muted">
                   {job.start} – {job.end}
                 </span>
               </div>
@@ -58,14 +60,14 @@ export function ResumeView() {
           {resume.education.map((edu) => (
             <div
               key={edu.school}
-              className="flex flex-wrap items-baseline justify-between gap-x-4"
+              className="flex items-baseline justify-between gap-x-4"
             >
-              <h3 className="text-base font-semibold text-foreground">
+              <h3 className="min-w-0 text-base font-semibold text-foreground">
                 {edu.credential}
                 <span className="font-normal text-muted"> · </span>
                 <span className="font-normal text-muted">{edu.school}</span>
               </h3>
-              <span className="text-sm text-muted">
+              <span className="shrink-0 whitespace-nowrap text-sm text-muted">
                 {edu.start} – {edu.end}
               </span>
             </div>
