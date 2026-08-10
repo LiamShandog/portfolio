@@ -31,8 +31,7 @@ export const profile: Profile = {
   role: "Full-Stack & Robotics Developer",
   tagline:
     "I build at the intersection of software and hardware — from enterprise data platforms on Palantir Foundry to autonomous robots running ROS.",
-  availability:
-    "Seeking a 12–16 month software engineering placement starting May 2027.",
+  availability: "Seeking a placement starting May 2027.",
   location: "Ontario, Canada",
   email: "liamshan13@gmail.com",
   bio: [
