@@ -76,4 +76,24 @@ export const projects: Project[] = [
       "Tight hardware/software integration across the sensing and drive subsystems",
     ],
   },
+  {
+    slug: "sae-aero-autonomy",
+    title: "SAE Aero 2027 Autonomy Stack",
+    summary:
+      "The ROS 2 autonomy stack for a fixed-wing autonomous drone competition — vision-based object detection, reproducible cross-platform builds, and a 15-person software team behind it.",
+    description:
+      "Own the autonomy stack for SAE Aero 2027, a fixed-wing autonomous drone competition, and direct the 15-person software team building it. Perception centres on a YOLO object-detection model with Roboflow running the dataset and training pipeline, and the whole stack builds reproducibly on Ubuntu 24.04 across macOS, Windows, and Linux through a Docker setup I maintain.",
+    tags: ["ROS 2", "Computer Vision", "YOLO", "Docker", "Python"],
+    githubRepo: "Queen-s-Aerospace-Design-Team/AeroSAE2027",
+    hideStars: true,
+    media: [
+      { type: "image", src: "/media/drone_sim.png", alt: "ROS 2 bridged to a PX4 flight-stack simulation during an armed takeoff" },
+    ],
+    highlights: [
+      "YOLO object-detection model for airborne target recognition, with Roboflow running the dataset and training pipeline",
+      "Docker setup giving the team reproducible Ubuntu 24.04 builds across macOS, Windows, and Linux",
+      "Directing a 15-person software team — delegating work and onboarding new contributors to ROS 2",
+      "Evaluating NVIDIA Cosmos world models as an extension to the perception pipeline, so detection trains on real-world data rather than curated image sets",
+    ],
+  },
 ];
