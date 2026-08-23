@@ -39,11 +39,14 @@ export const resume: Resume = {
       role: "Software Developer",
       start: "Jun 2026",
       end: "Sep 2026",
-      location: "Ottawa, Ontario · Remote",
+      location: "Ottawa, Ontario",
       bullets: [
-        "Built React/OSDK apps for trucking operations, delivering custom software to clients across North America.",
-        "Developed TypeScript functions within the Ontology SDK to power business logic across fleet workflows.",
-        "Engineered Python data pipelines to cleanse and normalize thousands of rows of truck data, boosting productivity in trucking workflows by 50%.",
+        "Exposed 10,000+ hours per week of equipment idling, worth $1,000,000+ annually in recoverable cost, by building a full-stack Equipment Management System in Palantir Foundry for a previously untracked fleet.",
+        "Increased job-site utilization of 1,000+ trucks and pieces of equipment by shipping automated alerts.",
+        "Restored live equipment telematics by fixing broken ingestion APIs and rebuilding the Python transform pipeline that parses 10,000+ records per day across a database of millions.",
+        "Modeled the business as a Foundry ontology and wrote the TypeScript edit functions behind it, giving non-technical staff a governed way to update production records.",
+        "Shipped the operator-facing front end as a React and TypeScript application on Foundry's Ontology SDK (OSDK), so site staff could act on live fleet data directly.",
+        "Reviewed code and wrote and ran unit tests across the Python and TypeScript codebase.",
       ],
     },
     {
@@ -53,9 +56,10 @@ export const resume: Resume = {
       end: "Apr 2026",
       location: "Ottawa, Ontario · Remote",
       bullets: [
-        "Developed truck-dispatch software in Palantir Foundry to manage the largest fleet in Eastern Ontario.",
+        "Digitized dispatch for a 100+ driver fleet by building custom dispatch software in Palantir Foundry.",
+        "Eliminated 4+ hours of daily dispatcher calls and dozens of spreadsheets by modeling fleet data in an ontology.",
         "Reduced compute costs from $100+/week to single digits by caching data locally instead of querying the ontology.",
-        "Worked hand-in-hand with employees across every division to create, iterate on, and improve Foundry workflows.",
+        "Delivered the dispatcher-facing tooling as Foundry Workshop applications backed by Python transforms.",
       ],
     },
     {
@@ -65,9 +69,11 @@ export const resume: Resume = {
       end: "Present",
       location: "Kingston, Ontario",
       bullets: [
-        "Direct a 15-person software team, delegating tasks and onboarding new contributors to ROS 2.",
-        "Building the software stack for SAE Aero 2027, a fixed-wing autonomous drone competition.",
-        "Maintain a Docker setup that gives the team reproducible Ubuntu 24.04 builds across platforms.",
+        "Directing a 15-person software team, delegating tasks, and onboarding new ROS 2 contributors.",
+        "Developing a software stack for SAE Aero 2027, a fixed-wing autonomous drone competition.",
+        "Managing a setup in Docker allowing cross-platform builds on macOS, Windows, and Linux of an Ubuntu 24.04 system.",
+        "Training a YOLO object-detection model with Roboflow to identify ground targets from the air.",
+        "Implementing physical AI on the airframe by integrating the vision model into the ROS 2 autonomy stack, so onboard perception drives live flight decisions.",
       ],
     },
     {
@@ -105,16 +111,28 @@ export const resume: Resume = {
   ],
   skills: [
     {
-      category: "Programming",
-      items: ["TypeScript / JavaScript", "Python", "C / C++", "React", "NIOS II Assembly", "VHDL"],
+      category: "Languages",
+      items: ["TypeScript", "JavaScript", "Python", "C / C++", "NIOS II Assembly", "VHDL"],
+    },
+    {
+      category: "Tools & Frameworks",
+      items: ["Palantir Foundry", "Ontology SDK", "React", "Git", "Docker", "Linux", "ROS 2", "Vercel"],
     },
     {
       category: "Robotics & Hardware",
-      items: ["ROS 2", "Arduino", "Raspberry Pi", "SLAM", "PID Control", "Sensor Integration", "Docker"],
+      items: ["Arduino", "Raspberry Pi", "SLAM", "PID Control", "Sensor Integration"],
     },
     {
-      category: "Platforms & Data",
-      items: ["Palantir Foundry", "Ontology SDK", "Python Data Pipelines", "Git", "Vercel"],
+      category: "Data",
+      items: [
+        "Python data pipelines",
+        "Data cleaning & normalization",
+        "SQL-style querying / Foundry querying logic",
+      ],
+    },
+    {
+      category: "AI-Assisted Development",
+      items: ["Claude Code — used daily to plan, explore, and implement on production work"],
     },
     {
       category: "Design & CAD",

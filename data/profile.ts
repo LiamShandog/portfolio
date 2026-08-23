@@ -32,7 +32,7 @@ export const profile: Profile = {
   tagline:
     "I build at the intersection of software and hardware — from enterprise data platforms on Palantir Foundry to autonomous robots running ROS.",
   availability: "Seeking a placement starting May 2027.",
-  location: "Ontario, Canada",
+  location: "Ottawa, Ontario",
   email: "liamshan13@gmail.com",
   bio: [
     "I'm a Mechatronics and Robotics Engineering student at Queen's University with a deep interest in robotics, aeronautics, astronautics, automation, and data engineering.",
