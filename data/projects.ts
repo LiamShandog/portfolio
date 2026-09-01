@@ -38,9 +38,9 @@ export const projects: Project[] = [
     slug: "sae-aero-autonomy",
     title: "SAE Aero 2027 Autonomy Stack",
     summary:
-      "The C++ and Python autonomy stack for a fixed-wing drone entering the advanced class of SAE Aero 2027 — onboard object detection, reproducible cross-platform builds, and a 15-member software team behind it.",
+      "The C++ and Python autonomy stack for a fixed-wing drone entering the advanced class of SAE Aero 2027 — reproducible cross-platform builds, an early-stage vision pipeline, and a 15-member software team behind it.",
     description:
-      "Own the autonomy stack for SAE Aero 2027, a fixed-wing autonomous drone competing in the advanced class, and direct the 15-member software team building it in C++ and Python. Perception pairs Nvidia's Cosmos physical AI model with a YOLO object-detection model trained to pick out task ground targets from a ZED 3D depth-sensing camera mid-flight, and the whole stack builds reproducibly on Ubuntu 24.04 across macOS, Windows, and Linux through the GitHub organization and Docker build system I maintain.",
+      "Own the autonomy stack for SAE Aero 2027, a fixed-wing autonomous drone competing in the advanced class, and direct the 15-member software team building it in C++ and Python. The build system is in place — Ubuntu 24.04 reproducibly across macOS, Windows, and Linux through the GitHub organization and Docker setup I maintain. Perception is still early: we are working toward a YOLO object-detection model to pick out task ground targets from a ZED 3D depth-sensing camera mid-flight, with Nvidia's Cosmos physical AI model under evaluation alongside it.",
     tags: ["ROS 2", "C++", "Python", "Computer Vision", "YOLO", "Docker"],
     githubRepo: "Queen-s-Aerospace-Design-Team/AeroSAE2027",
     hideStars: true,
@@ -49,9 +49,9 @@ export const projects: Project[] = [
     ],
     highlights: [
       "Directing a 15-member team building the C++ and Python stack for the advanced class of the SAE Aero 2027 design competition",
-      "YOLO object-detection model trained to identify task ground targets from a ZED 3D depth-sensing camera mid-flight",
-      "Nvidia Cosmos physical AI model implemented alongside the vision stack, so onboard perception drives live flight decisions",
       "GitHub organization and a Dockerized Ubuntu 24.04 build system giving every contributor consistent cross-platform development on macOS, Windows, and Linux",
+      "Early work on a YOLO object-detection model to identify task ground targets from a ZED 3D depth-sensing camera mid-flight",
+      "Evaluating Nvidia's Cosmos physical AI model as a component of the perception pipeline",
     ],
     featured: true,
   },
