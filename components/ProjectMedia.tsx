@@ -52,7 +52,7 @@ export function ProjectMedia({ media, title }: ProjectMediaProps) {
             src={current.src}
             alt={current.alt || title}
             fill
-            sizes="(min-width: 768px) 36rem, 100vw"
+            sizes="(min-width: 768px) 24rem, 100vw"
             className="object-contain"
           />
         )}

@@ -25,9 +25,11 @@ describe("ResumeView", () => {
   it("renders the summary, experience, education and skills", () => {
     render(<ResumeView />);
     expect(screen.getByText(resume.summary)).toBeInTheDocument();
+    // The company can repeat across entries (three Queen's Aerospace Design
+    // Team roles), so assert presence rather than uniqueness.
     expect(
-      screen.getByText(resume.experience[0].company),
-    ).toBeInTheDocument();
+      screen.getAllByText(resume.experience[0].company).length,
+    ).toBeGreaterThan(0);
     expect(
       screen.getByText(resume.experience[0].bullets[0]),
     ).toBeInTheDocument();

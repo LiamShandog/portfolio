@@ -31,46 +31,54 @@ export function ProjectCard({ project, stats }: ProjectCardProps) {
 
   const showStars = stats && !project.hideStars;
 
+  const media = project.media ?? [];
+
   return (
     <Card className="flex flex-col">
-      {project.media && project.media.length > 0 && (
-        <div className="mb-5">
-          <ProjectMedia media={project.media} title={project.title} />
-        </div>
-      )}
-
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="text-lg font-semibold text-foreground">
-          {project.title}
-        </h3>
-        {showStars && (
-          <span className="inline-flex shrink-0 items-center gap-1 text-sm text-muted">
-            <StarIcon />
-            {stats.stars}
-          </span>
+      {/* Cards span a full row, so at md+ the media sits in its own left column
+          beside the text instead of stretching to the full card width. */}
+      <div className="flex flex-col md:flex-row md:gap-8">
+        {media.length > 0 && (
+          <div className="mb-5 md:mb-0 md:w-2/5 md:shrink-0">
+            <ProjectMedia media={media} title={project.title} />
+          </div>
         )}
-      </div>
 
-      <p className="mt-2 text-sm leading-relaxed text-muted">
-        {project.summary}
-      </p>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start justify-between gap-3">
+            <h3 className="text-lg font-semibold text-foreground">
+              {project.title}
+            </h3>
+            {showStars && (
+              <span className="inline-flex shrink-0 items-center gap-1 text-sm text-muted">
+                <StarIcon />
+                {stats.stars}
+              </span>
+            )}
+          </div>
 
-      <ul className="mt-4 space-y-1.5">
-        {project.highlights.map((highlight) => (
-          <li
-            key={highlight}
-            className="flex gap-2 text-sm leading-relaxed text-foreground/80"
-          >
-            <span aria-hidden="true" className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-            {highlight}
-          </li>
-        ))}
-      </ul>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            {project.summary}
+          </p>
 
-      <div className="mt-4 flex flex-wrap gap-2">
-        {project.tags.map((tag) => (
-          <Badge key={tag}>{tag}</Badge>
-        ))}
+          <ul className="mt-4 space-y-1.5">
+            {project.highlights.map((highlight) => (
+              <li
+                key={highlight}
+                className="flex gap-2 text-sm leading-relaxed text-foreground/80"
+              >
+                <span aria-hidden="true" className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                {highlight}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-4 flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <Badge key={tag}>{tag}</Badge>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="mt-5 flex flex-wrap gap-4 border-t border-border pt-4 text-sm font-medium">

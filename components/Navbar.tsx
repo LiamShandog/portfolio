@@ -7,9 +7,9 @@ import { buttonClasses } from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {

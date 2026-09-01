@@ -26,15 +26,15 @@ describe("Navbar", () => {
     expect(screen.getAllByText(profile.name).length).toBeGreaterThan(0);
     expect(screen.getByRole("link", { name: "About" })).toHaveAttribute(
       "href",
-      "#about",
+      "/#about",
     );
     expect(screen.getByRole("link", { name: "Projects" })).toHaveAttribute(
       "href",
-      "#projects",
+      "/#projects",
     );
     expect(screen.getByRole("link", { name: "Contact" })).toHaveAttribute(
       "href",
-      "#contact",
+      "/#contact",
     );
   });
 

@@ -32,8 +32,20 @@ export type Resume = {
 // data, and the downloadable PDF in /public should stay in sync with it.
 export const resume: Resume = {
   summary:
-    "Mechatronics and Robotics Engineering student at Queen's University and a working software developer — building full-stack tools and Python data pipelines on Palantir Foundry, and autonomous robots on ROS. I gravitate toward hard integration problems that span software and hardware, and I care about shipping solutions people actually rely on.",
+    "Mechatronics and Robotics Engineering student at Queen's University and a software developer — I have built full-stack tools and Python data pipelines on Palantir Foundry, and autonomous robots on ROS. I gravitate toward hard integration problems that span software and hardware, and I care about shipping solutions people actually rely on.",
   experience: [
+    {
+      company: "Queen's Aerospace Design Team",
+      role: "Automation Manager",
+      start: "Jul 2026",
+      end: "Present",
+      location: "Kingston, Ontario",
+      bullets: [
+        "Directing a 15-member team building the software stack in C++ and Python for a fixed-wing autonomous drone to compete in the advanced class of the SAE Aero 2027 design competition.",
+        "Managing a GitHub organization and a Dockerized Ubuntu 24.04 build system enabling consistent cross-platform development across macOS, Windows, and Linux for all contributors.",
+        "Implementing Nvidia's Cosmos physical AI model and training a YOLO object-detection model to identify specified task ground targets from a ZED 3D depth-sensing camera mid-flight.",
+      ],
+    },
     {
       company: "Cavtera",
       role: "Software Developer",
@@ -41,7 +53,7 @@ export const resume: Resume = {
       end: "Sep 2026",
       location: "Ottawa, Ontario",
       bullets: [
-        "Exposed 10,000+ hours per week of equipment idling, worth $1,000,000+ annually in recoverable cost, by building a full-stack Equipment Management System in Palantir Foundry for a previously untracked fleet.",
+        "Saved $1,000,000+ annually in recoverable costs through exposing 10,000+ hours per week of idling equipment by building a full-stack equipment management system using TypeScript and React.",
         "Increased job-site utilization of 1,000+ trucks and pieces of equipment by shipping automated alerts.",
         "Restored live equipment telematics by fixing broken ingestion APIs and rebuilding the Python transform pipeline that parses 10,000+ records per day across a database of millions.",
         "Modeled the business as a Foundry ontology and wrote the TypeScript edit functions behind it, giving non-technical staff a governed way to update production records.",
@@ -60,20 +72,6 @@ export const resume: Resume = {
         "Eliminated 4+ hours of daily dispatcher calls and dozens of spreadsheets by modeling fleet data in an ontology.",
         "Reduced compute costs from $100+/week to single digits by caching data locally instead of querying the ontology.",
         "Delivered the dispatcher-facing tooling as Foundry Workshop applications backed by Python transforms.",
-      ],
-    },
-    {
-      company: "Queen's Aerospace Design Team",
-      role: "Automation Manager",
-      start: "Jul 2026",
-      end: "Present",
-      location: "Kingston, Ontario",
-      bullets: [
-        "Directing a 15-person software team, delegating tasks, and onboarding new ROS 2 contributors.",
-        "Developing a software stack for SAE Aero 2027, a fixed-wing autonomous drone competition.",
-        "Managing a setup in Docker allowing cross-platform builds on macOS, Windows, and Linux of an Ubuntu 24.04 system.",
-        "Training a YOLO object-detection model with Roboflow to identify ground targets from the air.",
-        "Implementing physical AI on the airframe by integrating the vision model into the ROS 2 autonomy stack, so onboard perception drives live flight decisions.",
       ],
     },
     {
