@@ -41,9 +41,9 @@ export const resume: Resume = {
       end: "Present",
       location: "Kingston, Ontario",
       bullets: [
+        "Developing a Computer Vision stack by implementing physical AI world models and training a YOLO object-detection model to identify specified task ground targets from a ZED 3D depth-sensing camera mid-flight.",
         "Directing a 15-member team building the software stack in C++ and Python for a fixed-wing autonomous drone to compete in the advanced class of the SAE Aero 2027 design competition.",
         "Managing a GitHub organization and a Dockerized Ubuntu 24.04 build system enabling consistent cross-platform development across macOS, Windows, and Linux for all contributors.",
-        "Building out the perception pipeline: early work on a YOLO object-detection model to identify specified task ground targets from a ZED 3D depth-sensing camera mid-flight, with Nvidia's Cosmos physical AI model under evaluation.",
       ],
     },
     {
