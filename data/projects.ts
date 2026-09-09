@@ -35,12 +35,12 @@ export type Project = {
 // where the repo is private; adding it renders a public "GitHub →" link.
 export const projects: Project[] = [
   {
-    slug: "sae-aero-autonomy",
-    title: "SAE Aero 2027 Autonomy Stack",
+    slug: "sae-aero-perception",
+    title: "SAE Aero 2027 Perception Stack",
     summary:
-      "The C++ and Python autonomy stack for a fixed-wing drone entering the advanced class of SAE Aero 2027 — reproducible cross-platform builds, an early-stage vision pipeline, and a 15-member software team behind it.",
+      "The C++ and Python perception stack for a fixed-wing drone entering the advanced class of SAE Aero 2027 — reproducible cross-platform builds, an early-stage vision pipeline, and a 15-member software team behind it.",
     description:
-      "Own the autonomy stack for SAE Aero 2027, a fixed-wing autonomous drone competing in the advanced class, and direct the 15-member software team building it in C++ and Python. The build system is in place — Ubuntu 24.04 reproducibly across macOS, Windows, and Linux through the GitHub organization and Docker setup I maintain. Perception is still early: we are working toward a YOLO object-detection model to pick out task ground targets from a ZED 3D depth-sensing camera mid-flight, with Nvidia's Cosmos physical AI model under evaluation alongside it.",
+      "Own the perception stack for SAE Aero 2027, a fixed-wing autonomous drone competing in the advanced class, and direct the 15-member software team building it in C++ and Python. The build system is in place — Ubuntu 24.04 reproducibly across macOS, Windows, and Linux through the GitHub organization and Docker setup I maintain. Perception is still early: we are working toward a YOLO object-detection model to pick out task ground targets from a ZED 3D depth-sensing camera mid-flight, with Nvidia's Cosmos physical AI model under evaluation alongside it.",
     tags: ["ROS 2", "C++", "Python", "Computer Vision", "YOLO", "Docker"],
     githubRepo: "Queen-s-Aerospace-Design-Team/AeroSAE2027",
     hideStars: true,

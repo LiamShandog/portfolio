@@ -36,7 +36,7 @@ export const resume: Resume = {
   experience: [
     {
       company: "Queen's Aerospace Design Team",
-      role: "Automation Manager",
+      role: "Perception Manager",
       start: "Jul 2026",
       end: "Present",
       location: "Kingston, Ontario",
