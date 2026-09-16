@@ -7,8 +7,8 @@ import { buttonClasses } from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 
 const links = [
-  { label: "About", href: "/#about" },
   { label: "Projects", href: "/#projects" },
+  { label: "About", href: "/#about" },
   { label: "Contact", href: "/#contact" },
 ];
 

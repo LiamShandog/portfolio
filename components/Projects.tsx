@@ -20,10 +20,10 @@ export async function Projects() {
   );
 
   return (
-    <Section id="projects">
+    <Section id="projects" className="bg-surface/60">
       <Container>
         <h2 className="text-3xl font-semibold tracking-tight text-foreground">
-          Selected Work
+          Projects
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-muted">
           A few projects I&apos;m proud of — each one taught me something and

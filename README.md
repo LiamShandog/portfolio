@@ -1,7 +1,7 @@
 # Portfolio — Liam Shannon
 
 A warm, professional personal portfolio built to be skimmable in ~30 seconds:
-a single-page scroll (Hero → About → Projects → Contact) plus a dedicated
+a single-page scroll (Hero → Projects → About → Contact) plus a dedicated
 `/resume` page with a PDF download. Project cards pull live GitHub stats at
 build time.
 

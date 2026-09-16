@@ -5,7 +5,7 @@ import { profile } from "@/data/profile";
 
 export function About() {
   return (
-    <Section id="about" className="bg-surface/60">
+    <Section id="about">
       <Container>
         <div className="max-w-3xl">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground">
