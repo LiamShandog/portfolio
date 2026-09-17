@@ -33,16 +33,16 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Environmental portrait. object-position keeps the face centred in
-              the circular crop; tune the percentage if a different photo is used. */}
+          {/* Square headshot with the face already centred, so it fills the
+              circular crop as-is; set object-position if a different photo is used. */}
           <div className="shrink-0">
             <div className="relative h-40 w-40 overflow-hidden rounded-full ring-1 ring-border sm:h-48 sm:w-48">
               <Image
-                src="/liam_photo.jpg"
+                src="/Headshot.jpg"
                 alt={`Portrait of ${profile.name}`}
                 fill
                 sizes="(min-width: 640px) 12rem, 10rem"
-                className="object-cover object-[center_28%]"
+                className="object-cover object-center"
                 priority
               />
             </div>

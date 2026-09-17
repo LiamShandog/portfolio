@@ -26,7 +26,7 @@ export async function Projects() {
           Projects
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-muted">
-          A few projects I&apos;m proud of — each one taught me something and
+          A few projects I&apos;m proud of. Each one taught me something and
           shipped something real.
         </p>
         <div className="mt-10 grid gap-8">

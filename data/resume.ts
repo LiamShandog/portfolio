@@ -32,16 +32,17 @@ export type Resume = {
 // data, and the downloadable PDF in /public should stay in sync with it.
 export const resume: Resume = {
   summary:
-    "Mechatronics and Robotics Engineering student at Queen's University and a software developer — I have built full-stack tools and Python data pipelines on Palantir Foundry, and autonomous robots on ROS. I gravitate toward hard integration problems that span software and hardware, and I care about shipping solutions people actually rely on.",
+    "Mechatronics and Robotics Engineering student at Queen's University and a software developer. I have built full-stack tools and Python data pipelines on Palantir Foundry, and autonomous robots on ROS. I gravitate toward hard integration problems that span software and hardware, and I care about shipping solutions people actually rely on.",
   experience: [
     {
       company: "Queen's Aerospace Design Team",
-      role: "Perception Manager",
+      role: "Autonomy Manager",
       start: "Jul 2026",
       end: "Present",
       location: "Kingston, Ontario",
       bullets: [
-        "Developing a Computer Vision stack by implementing physical AI world models and training a YOLO object-detection model to identify specified task ground targets from a ZED 3D depth-sensing camera mid-flight.",
+        "Enabling autonomous SAE Aero mission execution by developing ROS 2 autonomy software integrated with PX4.",
+        "Identifying task ground targets mid-flight from a monocular camera feed by developing a computer vision stack that pairs physical AI world models with a trained YOLO object-detection model.",
         "Directing a 15-member team building the software stack in C++ and Python for a fixed-wing autonomous drone to compete in the advanced class of the SAE Aero 2027 design competition.",
         "Managing a GitHub organization and a Dockerized Ubuntu 24.04 build system enabling consistent cross-platform development across macOS, Windows, and Linux for all contributors.",
       ],
@@ -53,9 +54,9 @@ export const resume: Resume = {
       end: "Sep 2026",
       location: "Ottawa, Ontario",
       bullets: [
+        "Restored live equipment telemetry by fixing broken ingestion APIs and rebuilding the Python transform pipeline that parses 10,000+ records per day across a database of millions.",
         "Saved $1,000,000+ annually in recoverable costs through exposing 10,000+ hours per week of idling equipment by building a full-stack equipment management system using TypeScript and React.",
         "Increased job-site utilization of 1,000+ trucks and pieces of equipment by shipping automated alerts.",
-        "Restored live equipment telematics by fixing broken ingestion APIs and rebuilding the Python transform pipeline that parses 10,000+ records per day across a database of millions.",
         "Modeled the business as a Foundry ontology and wrote the TypeScript edit functions behind it, giving non-technical staff a governed way to update production records.",
         "Shipped the operator-facing front end as a React and TypeScript application on Foundry's Ontology SDK (OSDK), so site staff could act on live fleet data directly.",
         "Reviewed code and wrote and ran unit tests across the Python and TypeScript codebase.",
@@ -102,7 +103,7 @@ export const resume: Resume = {
     {
       school: "Queen's University",
       credential:
-        "BASc in Mechatronics and Robotics Engineering — GPA 4.19/4.3 · Dean's Scholar",
+        "BASc in Mechatronics and Robotics Engineering · GPA 4.19/4.3 · Dean's Scholar",
       start: "Sep 2024",
       end: "Expected May 2028",
     },
@@ -130,7 +131,7 @@ export const resume: Resume = {
     },
     {
       category: "AI-Assisted Development",
-      items: ["Claude Code — used daily to plan, explore, and implement on production work"],
+      items: ["Claude Code, used daily to plan, explore, and implement on production work"],
     },
     {
       category: "Design & CAD",

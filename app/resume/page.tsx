@@ -6,7 +6,7 @@ import { ResumeView } from "@/components/ResumeView";
 import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: `Resume — ${profile.name}`,
+  title: `Resume | ${profile.name}`,
   description: `Resume and experience of ${profile.name}.`,
 };
 

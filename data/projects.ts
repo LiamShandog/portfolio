@@ -16,7 +16,7 @@ export type Project = {
   description: string;
   /** Tech/tags shown as badges. */
   tags: string[];
-  /** "owner/name" — used for build-time GitHub stats (optional). */
+  /** "owner/name", used for build-time GitHub stats (optional). */
   githubRepo?: string;
   /** Live/demo URL (optional). */
   liveUrl?: string;
@@ -30,25 +30,26 @@ export type Project = {
   featured?: boolean;
 };
 
-// Real projects for Liam. Keep to 2-3 strong entries with genuine highlights —
+// Real projects for Liam. Keep to 2-3 strong entries with genuine highlights;
 // recruiters value depth over a long list. githubRepo is intentionally omitted
 // where the repo is private; adding it renders a public "GitHub →" link.
 export const projects: Project[] = [
   {
-    slug: "sae-aero-perception",
-    title: "SAE Aero 2027 Perception Stack",
+    slug: "sae-aero-software-stack",
+    title: "SAE Aero 2027 Software Stack",
     summary:
-      "The C++ and Python perception stack for a fixed-wing drone entering the advanced class of SAE Aero 2027 — onboard object detection, reproducible cross-platform builds, and a 15-member software team behind it.",
+      "The C++ and Python software stack for a fixed-wing autonomous drone entering the advanced class of SAE Aero 2027: ROS 2 autonomy on PX4, onboard object detection, reproducible cross-platform builds, and a 15-member software team behind it.",
     description:
-      "Own the perception stack for SAE Aero 2027, a fixed-wing autonomous drone competing in the advanced class, and direct the 15-member software team building it in C++ and Python. I am developing the computer vision stack — implementing physical AI world models and training a YOLO object-detection model to pick out specified task ground targets from a ZED 3D depth-sensing camera mid-flight. The whole stack builds reproducibly on Ubuntu 24.04 across macOS, Windows, and Linux through the GitHub organization and Docker setup I maintain.",
-    tags: ["ROS 2", "C++", "Python", "Computer Vision", "YOLO", "Docker"],
+      "Own the software stack for SAE Aero 2027, a fixed-wing autonomous drone competing in the advanced class, and direct the 15-member software team building it in C++ and Python. I am developing the ROS 2 autonomy software, integrated with PX4, that executes the SAE Aero mission autonomously, along with a computer vision stack that pairs physical AI world models with a trained YOLO object-detection model to identify task ground targets mid-flight from a monocular camera feed. The whole stack builds reproducibly on Ubuntu 24.04 across macOS, Windows, and Linux through the GitHub organization and Docker setup I maintain.",
+    tags: ["ROS 2", "PX4", "C++", "Python", "Computer Vision", "YOLO", "Docker"],
     githubRepo: "Queen-s-Aerospace-Design-Team/AeroSAE2027",
     hideStars: true,
     media: [
       { type: "image", src: "/media/drone_sim.png", alt: "ROS 2 bridged to a PX4 flight-stack simulation during an armed takeoff" },
     ],
     highlights: [
-      "Developing a computer vision stack: physical AI world models plus a YOLO object-detection model trained to identify specified task ground targets from a ZED 3D depth-sensing camera mid-flight",
+      "ROS 2 autonomy software integrated with PX4 for autonomous SAE Aero mission execution",
+      "Computer vision stack pairing physical AI world models with a trained YOLO object-detection model to identify task ground targets mid-flight from a monocular camera feed",
       "Directing a 15-member team building the C++ and Python stack for the advanced class of the SAE Aero 2027 design competition",
       "GitHub organization and a Dockerized Ubuntu 24.04 build system giving every contributor consistent cross-platform development on macOS, Windows, and Linux",
     ],
@@ -70,9 +71,10 @@ export const projects: Project[] = [
       { type: "image", src: "/media/slam_map.jpg", alt: "SLAM-generated map of the test environment" },
     ],
     highlights: [
-      "ROS 2 stack on a Raspberry Pi 4 for decision-making, sensor processing, and SLAM Toolbox mapping from RPLidar scans",
-      "Path planning that derives velocity commands from live localization and mapping data",
-      "Arduino low-level controller — serial bridge, encoder feedback, and PID motor control — validated in a custom Gazebo Mars world before hardware",
+      "Modular Xacro description of the rover's kinematics: a 7-link/6-joint URDF spanning chassis, four wheel joints, and LiDAR for Gazebo/RViz simulation",
+      "Reliable Pi-Arduino motor control through a custom serial protocol and ROS 2 node driving motors from /cmd_vel, with a 100 Hz encoder loop over 115200-baud serial",
+      "Real-time mapping and localization from a SLAM Toolbox pipeline on the robot's TF/odometry stack, continuously generating occupancy grids from 12 m-range LiDAR scans",
+      "Remote teleoperation through a ROS 2 teleop_twist_joy pipeline at a 20 Hz joystick input rate with deadman-switch safety",
     ],
   },
   {

@@ -13,7 +13,7 @@ export function Contact() {
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             I&apos;m open to new opportunities and always happy to talk. The
-            fastest way to reach me is by email — I usually reply within a day.
+            fastest way to reach me is by email. I usually reply within a day.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

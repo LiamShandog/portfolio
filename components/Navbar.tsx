@@ -85,7 +85,7 @@ export function Navbar() {
           </button>
         </nav>
 
-        {/* Mobile menu — only mounted when open so links aren't duplicated */}
+        {/* Mobile menu: only mounted when open so links aren't duplicated */}
         {open && (
           <div className="sm:hidden">
             <div className="flex flex-col gap-1 pb-4">

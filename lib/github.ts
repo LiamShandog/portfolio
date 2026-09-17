@@ -10,7 +10,7 @@ export type RepoStats = {
  * Fetch public stats for a "owner/name" repo at build time.
  *
  * Returns null on any failure (offline, 404, rate limit) so callers can fall
- * back to the project's own data — the build never breaks and no empty state
+ * back to the project's own data, so the build never breaks and no empty state
  * ships. The `revalidate` hint lets Next periodically refresh the numbers.
  */
 export async function getRepoStats(repo: string): Promise<RepoStats | null> {

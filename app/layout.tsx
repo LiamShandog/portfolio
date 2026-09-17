@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-// Body: Inter — highly legible, neutral. Display: Fraunces — a soft, warm
+// Body: Inter, highly legible, neutral. Display: Fraunces, a soft, warm
 // serif that gives headings personality while still reading senior.
 const inter = Inter({
   variable: "--font-inter",
@@ -21,15 +21,15 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://liamshannon.vercel.app"),
   title: {
-    default: "Liam Shannon — Portfolio",
-    template: "%s — Liam Shannon",
+    default: "Liam Shannon | Portfolio",
+    template: "%s | Liam Shannon",
   },
   description:
-    "Portfolio of Liam Shannon — full-stack & robotics developer. Palantir Foundry, ROS, and full-stack projects, plus experience and contact info.",
+    "Portfolio of Liam Shannon, a full-stack & robotics developer. Palantir Foundry, ROS, and full-stack projects, plus experience and contact info.",
   openGraph: {
-    title: "Liam Shannon — Full-Stack & Robotics Developer",
+    title: "Liam Shannon | Full-Stack & Robotics Developer",
     description:
-      "Full-stack & robotics developer. Projects across Palantir Foundry, ROS, and the web — plus experience and how to get in touch.",
+      "Full-stack & robotics developer. Projects across Palantir Foundry, ROS, and the web, plus experience and how to get in touch.",
     type: "website",
   },
 };
