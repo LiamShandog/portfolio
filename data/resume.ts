@@ -111,11 +111,11 @@ export const resume: Resume = {
   skills: [
     {
       category: "Languages",
-      items: ["TypeScript", "JavaScript", "Python", "C / C++", "NIOS II Assembly", "VHDL"],
+      items: ["Python", "C / C++", "TypeScript", "JavaScript", "NIOS II Assembly", "VHDL"],
     },
     {
       category: "Tools & Frameworks",
-      items: ["Palantir Foundry", "Ontology SDK", "React", "Git", "Docker", "Linux", "ROS 2", "Vercel"],
+      items: ["ROS 2", "PX4", "YOLO", "Git", "Docker", "Linux", "React", "Palantir Foundry", "Ontology SDK", "Vercel"],
     },
     {
       category: "Robotics & Hardware",
