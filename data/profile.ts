@@ -30,7 +30,7 @@ export const profile: Profile = {
   name: "Liam Shannon",
   role: "Robotics Engineering Student with 15 Months of Experience",
   tagline:
-    "I solve difficult engineering problems, and do not give up until I finish. I love learning, and will always put an extra foot forward to develop strong systems.",
+    "I solve difficult engineering problems and don't give up until the job is done. I love learning, and I always go the extra mile to build strong systems.",
   availability: "Seeking a placement.",
   location: "Ottawa, Ontario",
   email: "liamshan13@gmail.com",

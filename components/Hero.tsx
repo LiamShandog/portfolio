@@ -9,7 +9,7 @@ export function Hero() {
       <Container>
         <div className="flex flex-col items-start gap-12 sm:flex-row sm:items-center sm:justify-between">
           <div className="max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-widest text-accent">
+            <p className="text-sm font-medium tracking-wide text-accent">
               {profile.role}
             </p>
             <h1 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl">
