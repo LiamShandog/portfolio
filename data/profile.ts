@@ -28,9 +28,9 @@ export type Profile = {
 // editing values here updates every section automatically.
 export const profile: Profile = {
   name: "Liam Shannon",
-  role: "Full-Stack & Robotics Developer",
+  role: "Robotics Engineering Student with 15 Months of Experience",
   tagline:
-    "I build at the intersection of software and hardware, from enterprise data platforms on Palantir Foundry to autonomous robots running ROS.",
+    "I solve difficult engineering problems, and do not give up until I finish. I love learning, and will always put an extra foot forward to develop strong systems.",
   availability: "Seeking a placement.",
   location: "Ottawa, Ontario",
   email: "liamshan13@gmail.com",
